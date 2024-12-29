@@ -63,6 +63,19 @@ header img {
   line-height: 24px;
 }
 
+.works img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.works p {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #344563;
+  padding: 8px 0;
+}
+
 .headline p:nth-child(2) {
   font-weight: 400;
   color: #344563;
@@ -89,16 +102,11 @@ header img {
 
 .works-card {
   width: 100%;
-  border: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 16px;
   background-color: #fff;
   margin-bottom: 60px;
-}
-
-.works img {
-  width: 100%;
-  border-radius: 8px;
 }
 
 .works h1 {
@@ -125,9 +133,19 @@ header img {
   font-weight: 600;
 }
 
+.works-card-tech li {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  background: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  color: #6070ff;
+}
 
 .works-card-info li:nth-child(n+2) {
-  color: #7A869A;
+  color: #7a869a;
   background: url('./assets/Counter.png') no-repeat left 5px;
   padding-left: 1em;
 }
@@ -137,49 +155,29 @@ header img {
   list-style: none;
 }
 
-.works p {
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #344563;
-  padding: 8px 0;
-}
-
 .works-card-tech {
   display: flex;
   gap: 10px;
 }
 
-.works-card-tech li {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  background: #EBEBFF;
-  border-radius: 8px;
-  padding: 4px 12px;
-  color: #6070FF;
-}
-
 button {
-border: 1px solid #6070FF;
-border-radius: 8px;
-padding: 12px;
-font-size: 17px;
-font-weight: 500;
-font-style: bold;
-line-height: 24px;
-letter-spacing: 0.03em;
-text-align: center;
-color: #396DF2;
-background-color: #ffffff;
-margin: 12px 0;
-align-self: start;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 17px;
+  font-weight: 500;
+  font-style: bold;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #396df2;
+  background-color: #fff;
+  margin: 12px 0;
+  align-self: start;
 }
-
 
 .about {
-  padding-top: 100px ;
+  padding-top: 100px;
   border-top-right-radius: 100px;
 }
 
@@ -192,11 +190,11 @@ align-self: start;
 }
 
 .skill h2 {
-font-size: 20px;
-font-weight: 500;
-line-height: 24px;
-text-align: left;
-color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #000;
 }
 
 .skill-list {
@@ -210,16 +208,16 @@ color: #000000;
   justify-content: space-between;
   align-items: center;
   padding: 20px 10px;
-  border-bottom:  1px solid #EBEBFF;
+  border-bottom: 1px solid #ebebff;
 }
 
-.skill-list-title:nth-child(1){
+.skill-list-title:nth-child(1) {
   border: none;
 }
 
 .skill-list-item {
   display: flex;
-  background: #F7F7F9;
+  background: #f7f7f9;
   border-radius: 8px;
   padding: 10px;
   align-items: center;
@@ -227,10 +225,9 @@ color: #000000;
 }
 
 .skill-list-item h3 {
-font-size: 15px;
-font-weight: 500;
-line-height: 20px;
-text-align: left;
-color: #253858;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: #253858;
 }
-
