@@ -47,7 +47,6 @@ header img {
   color: #6070ff;
 }
 
-
 .headline {
   display: flex;
   flex-direction: column;
@@ -189,8 +188,8 @@ button {
   padding: 12px;
   margin: 12px 0;
   background-color: #fff;
-  color: #396DF2;
-  ;
+  color: #396df2;
+  
 }
 
 .about {
@@ -339,8 +338,7 @@ button {
     display: none;
   }
 
-  .headline-container
-   {
+  .headline-container {
     padding: 14% 20%;
     border-bottom-left-radius: 140px;
   }
@@ -375,7 +373,7 @@ button {
     gap: 30px;
   }
 
-  .works-card:hover{
+  .works-card:hover {
     border: 1px solid #6070ff;
     cursor: pointer;
   }
@@ -395,13 +393,10 @@ button {
   }
 
   .about h1 {
-
-font-size: 40px;
-font-weight: 700;
-line-height: 52px;
-text-align: left;
-
-
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: left;
   }
 
   .about-me {
@@ -417,19 +412,19 @@ text-align: left;
     flex-wrap: wrap;
   }
 
-  .skill-list-title{
-width: 100%;  }
+  .skill-list-title {
+    width: 100%;
+  }
 
-.skill-list-item {  
-  flex-direction: column;
-  padding-right: 30px;
-  align-items: start;
+  .skill-list-item {
+    flex-direction: column;
+    padding-right: 30px;
+    align-items: start;
   }
 
   .about {
     flex: 1;
     padding: 10px 0;
-
   }
 
   .skill {
