@@ -367,6 +367,17 @@ button {
     gap: 30px;
   }
 
+  .works-card:hover{
+    border: 1px solid #6070ff;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #6070ff;
+    color: #fff;
+    cursor: pointer;
+  }
+
   .works-card:nth-child(2n) img {
     order: 2;
   }
