@@ -13,14 +13,23 @@
     <title>Portfolio</title>
   </head>
   <body>
+    <section class="menu">
+        <button class="close"><img src="./assets/close.png" alt="close"></button>
+      <ul>
+        <a href="#works"><li>Portfolio</li></a>
+        <a href="#about"><li>About</li></a>
+        <a href="#contact"><li>Contact</li></a>
+      </ul>
+
+    </section>
     <header>
       <nav>
         <ul class="nav-links">
           <li class="nav-logo">My Logo</li>
-          <li>Portfolio</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li class="union"><img src="./assets/image.png" alt="union" /></li>
+          <li><a href="#works">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button class="union"><img src="./assets/image.png" alt="union" /></button></li>
         </ul>
       </nav>
     </header>
@@ -52,7 +61,7 @@
           </li>
         </ul>
       </section>
-      <section class="works">
+      <section id="works" class="works">
         <div class="works-card">
           <img src="./assets/tonic.svg" alt="tonic" />
           <div class="works-card-block">
@@ -141,7 +150,7 @@
           </div>
         </div>
       </section>
-      <section class="about-me">
+      <section id="about" class="about-me">
       <section class="headline about">
         <h1>About Myself</h1>
         <p>
@@ -200,7 +209,7 @@
       </section>
     </section>
       <section class="contact-me">
-        <div class="contact">
+        <div id="contact" class="contact">
         <h1>Contact me</h1>
           <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
             I’d love to help with it!</p>
