@@ -12,7 +12,7 @@ body {
 }
 
 .menu {
-  display: none;
+  display: block;
   position: absolute;
   padding: 0% 5%;
   background-color: #6070ff;
@@ -22,6 +22,7 @@ body {
   line-height: 44px;
   width: 100%;
   height: 100vh;
+  backdrop-filter: blur(20px);  
 }
 
 .menu ul {
@@ -213,7 +214,7 @@ header img {
   color: #6070ff;
 }
 
-.works-card-info li:nth-child(n+2) {
+.works-card-info li:nth-child(n + 2) {
   color: #7a869a;
   background: url('./assets/Counter.png') no-repeat left 5px center;
   padding-left: 1em;
