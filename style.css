@@ -37,10 +37,6 @@ body {
   color: #fff;
 }
 
-.show {
-  display: block;
-}
-
 .close {
   float: right;
   background-color: #6070ff;
