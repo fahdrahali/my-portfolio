@@ -11,19 +11,18 @@ body {
   height: 100vh;
 }
 
-.menu {  
+.menu {
   display: none;
   position: absolute;
-  padding: 0% 10%;
-  background-color: #6070FF ;
+  padding: 0% 5%;
+  background-color: #6070ff;
   opacity: 0.9;
-font-size: 32px;
-font-weight: 600;
-line-height: 44px;
-width: 100%;
-height: 100vh;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  width: 100%;
+  height: 100vh;
 }
-
 
 .menu ul {
   display: flex;
@@ -37,16 +36,20 @@ height: 100vh;
   color: #fff;
 }
 
+.show {
+  display: block;
+}
+
 .close {
   float: right;
-  background-color: #6070FF;
+  background-color: #6070ff;
 }
 
 .close:hover {
   cursor: pointer;
 }
 
-.close:after {
+.close::after {
   content: '';
   display: block;
   clear: both;
@@ -57,7 +60,7 @@ height: 100vh;
 }
 
 .union:active {
- background-color: #fff;
+  background-color: #fff;
 }
 
 ul {
@@ -238,7 +241,6 @@ button {
   margin: 12px 0;
   background-color: #fff;
   color: #396df2;
-  
 }
 
 button:hover {
@@ -248,7 +250,7 @@ button:hover {
 }
 
 button:active {
-  background-color: #2230D2;
+  background-color: #2230d2;
   color: #fff;
 }
 
@@ -384,6 +386,7 @@ button:active {
   .nav-links a {
     text-decoration: none;
   }
+
   .nav-logo {
     font-size: 25px;
   }
@@ -501,13 +504,13 @@ button:active {
     align-self: center;
   }
 
-  .contact button:hover { 
+  .contact button:hover {
     background-color: #fff;
     color: #6070ff;
   }
 
   button:active {
-    background-color: #2230D2;
+    background-color: #2230d2;
     color: #fff;
   }
 }
