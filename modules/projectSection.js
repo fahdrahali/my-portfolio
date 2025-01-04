@@ -1,4 +1,4 @@
-import projects from "./projects";
+import projects from "./projects.js";
 
 const worksSection = document.createElement('section');
 worksSection.id = 'works';
@@ -10,7 +10,7 @@ const createWorksCard = (project) => {
 
     // create an image tag 
     const img = document.createElement('img');
-    img.src = project.img;
+    img.src = project.image;
     img.alt = project.name
 
     // create a div for works card block
@@ -23,7 +23,7 @@ const createWorksCard = (project) => {
 
     // create an unordred list for project infos
     const ul = document.createElement('ul');
-    ul.classList.add('works-card-infos');
+    ul.classList.add('works-card-info');
     const li = document.createElement('li');
     li.textContent = project.company;
     ul.appendChild(li);
@@ -66,9 +66,11 @@ const createWorksCard = (project) => {
 
 }
 
+const addProjectsSection = () => {
+    projects.map(project => {
+        createWorksCard(project);
+    });
+    document.querySelector('.main').insertBefore(worksSection, document.getElementById('about'));
+}
 
-projects.map(project => {
-    createWorksCard(project);
-});
-
-document.body.appendChild(worksSection).before(document.getElementById('about'));
+export default addProjectsSection;

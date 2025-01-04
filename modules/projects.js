@@ -46,7 +46,7 @@ addProject(
     addProject(
       'Tonic',
       'Description 1A daily selection of privately personalized reads; no accounts or sign-ups required. ',
-      './assets/tonic1.svg',
+      './assets/tonic2.svg',
       ['HTML', 'CSS', 'JS'],
       2015,
       'Back end dev',
