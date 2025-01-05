@@ -51,8 +51,12 @@ header img {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 40px 25px;
   background-color: #fff;
+  align-items: start;
+}
+
+.headline-container {
+  padding: 40px 25px;
 }
 
 .headline h1 {
@@ -184,10 +188,12 @@ button {
   padding: 12px;
   margin: 12px 0;
   background-color: #fff;
+  color: #396df2;
+  
 }
 
 .about {
-  padding-top: 100px;
+  padding: 100px 25px 40px 25px;
   border-top-right-radius: 100px;
 }
 
@@ -332,7 +338,7 @@ button {
     display: none;
   }
 
-  .headline {
+  .headline-container {
     padding: 14% 20%;
     border-bottom-left-radius: 140px;
   }
@@ -367,7 +373,7 @@ button {
     gap: 30px;
   }
 
-  .works-card:hover{
+  .works-card:hover {
     border: 1px solid #6070ff;
     cursor: pointer;
   }
@@ -384,5 +390,45 @@ button {
 
   .works-card-block {
     gap: 20px;
+  }
+
+  .about h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: left;
+  }
+
+  .about-me {
+    display: flex;
+    gap: 40px;
+    background-color: #fff;
+    padding: 5% 12%;
+    border-top-right-radius: 100px;
+  }
+
+  .about-me .skill-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .skill-list-title {
+    width: 100%;
+  }
+
+  .skill-list-item {
+    flex-direction: column;
+    padding-right: 30px;
+    align-items: start;
+  }
+
+  .about {
+    flex: 1;
+    padding: 10px 0;
+  }
+
+  .skill {
+    flex: 1.5;
+    padding: 0;
   }
 }
