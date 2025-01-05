@@ -30,6 +30,12 @@ header {
   align-items: center;
 }
 
+.nav-links li:nth-of-type(2),
+.nav-links li:nth-of-type(3),
+.nav-links li:nth-of-type(4) {
+  display: none;
+}
+
 header img {
   width: 18px;
   height: 12px;
@@ -38,8 +44,6 @@ header img {
 .nav-logo {
   font-size: 18px;
   font-weight: 700;
-  width: 76px;
-  height: 20px;
   color: #6070ff;
 }
 
@@ -154,7 +158,7 @@ header img {
 
 .works-card-info li:nth-child(n+2) {
   color: #7a869a;
-  background: url('./assets/Counter.png') no-repeat left 5px;
+  background: url('./assets/Counter.png') no-repeat left 5px center;
   padding-left: 1em;
 }
 
@@ -175,13 +179,11 @@ button {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #396df2;
-  background-color: #fff;
-  align-self: start;
   border: 1px solid #6070ff;
   border-radius: 8px;
   padding: 12px;
   margin: 12px 0;
+  background-color: #fff;
 }
 
 .about {
@@ -297,4 +299,90 @@ button {
 .contact button {
   color: #6070ff;
   padding: 10px 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-links {
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr 1fr;
+    justify-content: end;
+    height: 48px;
+    align-items: center;
+    padding: 10px 60px;
+  }
+
+  .nav-logo {
+    font-size: 25px;
+  }
+
+  .nav-links li:nth-of-type(2),
+  .nav-links li:nth-of-type(3),
+  .nav-links li:nth-of-type(4) {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    color: #344563;
+    padding: 10px;
+  }
+
+  .union {
+    display: none;
+  }
+
+  .headline {
+    padding: 14% 20%;
+    border-bottom-left-radius: 140px;
+  }
+
+  .headline h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+    text-align: left;
+  }
+
+  .works {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .works h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .works-card-info {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .works-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .works-card:hover{
+    border: 1px solid #6070ff;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #6070ff;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .works-card:nth-child(2n) img {
+    order: 2;
+  }
+
+  .works-card-block {
+    gap: 20px;
+  }
 }
