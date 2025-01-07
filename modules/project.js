@@ -1,8 +1,9 @@
 class Project {
-  constructor(name, description, image, technologies, year, type, company) {
+  constructor(name, description, moreDescription, image, technologies, year, type, company) {
     this.name = name;
     this.company= company;
     this.description = description;
+    this.moreDescription = moreDescription;
     this.image = image;
     this.technologies = technologies;
     this.year = year;
