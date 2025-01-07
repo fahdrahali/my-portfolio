@@ -1,3 +1,4 @@
+import addPrjectDetailsPopup from "./projectDetails.js";
 import projects from "./projects.js";
 
 const worksSection = document.createElement('section');
@@ -51,7 +52,13 @@ const createWorksCard = (project) => {
 
     // create a button for project link
     const btn = document.createElement('button');   
-    btn.textContent = 'See Project';                
+    btn.textContent = 'See Project';
+    btn.id = 'project-details';  
+    
+    btn.addEventListener('click', () => {
+        console.log('button clicked', project);
+        addPrjectDetailsPopup(project);
+    }); 
 
     // append all elements to works card
     worksCard.appendChild(img);
