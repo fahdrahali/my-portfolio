@@ -28,8 +28,8 @@ const addProject = (
 addProject(
   'Tonic',
   'Description 1A daily selection of privately personalized reads; no accounts or sign-ups required. ',
-  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sapiente quisquam rerum iure nam! Placeat tempora error assumenda distinctio? Atque recusandae, fugiat blanditiis exercitationem dolorum nulla nihil veniam nobis provident',
-  './assets/tonic.svg',
+  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sapiente quisquam rerum iure nam! Placeat tempora error assumenda distinctio? Atque recusandae, fugiat blanditiis exercitationem dolorum nulla nihil veniam nobis provident Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sapiente quisquam rerum iure nam! Placeat tempora error assumenda distinctio? Atque recusandae, fugiat blanditiis exercitationem dolorum nulla nihil veniam nobis provident',
+  './assets/snapshot.jpg',
   ['HTML', 'CSS', 'JS'],
   2015,
   'Back end dev',
@@ -39,7 +39,7 @@ addProject(
 addProject(
   'Multi-Post Stories',
   'Description 1A daily selection of privately personalized reads; no accounts or sign-ups required. ',
-  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sapiente quisquam rerum iure nam! Placeat tempora error assumenda distinctio? Atque recusandae, fugiat blanditiis exercitationem dolorum nulla nihil veniam nobis provident',
+  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sapiente quisquam rerum iure nam! Placeat tempora error assumenda distinctio? Atque recusandae, fugiat blanditiis exercitationem dolorum nulla nihil veniam nobis provident Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sapiente quisquam rerum iure nam! Placeat tempora error assumenda distinctio? Atque recusandae, fugiat blanditiis exercitationem dolorum nulla nihil veniam nobis provident',
   './assets/multi-post.svg',
   ['HTML', 'CSS', 'JS'],
   2015,
@@ -50,7 +50,7 @@ addProject(
 addProject(
   'Tonic',
   'Description 1A daily selection of privately personalized reads; no accounts or sign-ups required. ',
-  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sapiente quisquam rerum iure nam! Placeat tempora error assumenda distinctio? Atque recusandae, fugiat blanditiis exercitationem dolorum nulla nihil veniam nobis provident',
+  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sapiente quisquam rerum iure nam! Placeat tempora error assumenda distinctio? Atque recusandae, fugiat blanditiis exercitationem dolorum nulla nihil veniam nobis provident Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sapiente quisquam rerum iure nam! Placeat tempora error assumenda distinctio? Atque recusandae, fugiat blanditiis exercitationem dolorum nulla nihil veniam nobis provident',
   './assets/tonic2.svg',
   ['HTML', 'CSS', 'JS'],
   2015,
@@ -61,7 +61,7 @@ addProject(
 addProject(
   'Multi-Post Stories',
   'Description 1A daily selection of privately personalized reads; no accounts or sign-ups required. ',
-  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sapiente quisquam rerum iure nam! Placeat tempora error assumenda distinctio? Atque recusandae, fugiat blanditiis exercitationem dolorum nulla nihil veniam nobis provident',
+  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sapiente quisquam rerum iure nam! Placeat tempora error assumenda distinctio? Atque recusandae, fugiat blanditiis exercitationem dolorum nulla nihil veniam nobis provident Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sapiente quisquam rerum iure nam! Placeat tempora error assumenda distinctio? Atque recusandae, fugiat blanditiis exercitationem dolorum nulla nihil veniam nobis provident',
   './assets/multi-post2.svg',
   ['HTML', 'CSS', 'JS'],
   2015,
