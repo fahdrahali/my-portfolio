@@ -323,7 +323,7 @@ header img {
 .works-card-info li:nth-child(n + 2) {
   color: #7a869a;
   background: url('./assets/Counter.png') no-repeat left 5px center;
-  padding-left: 1rem;
+  padding-left: 20px;
 }
 
 .works-card-info li:first-child {
@@ -619,5 +619,68 @@ button:active {
   button:active {
     background-color: #2230d2;
     color: #fff;
+  }
+
+  .popup {
+    display: grid;
+    width: 80%;
+    height: 98%;
+    gap: 8px;
+  }
+
+  .popup section:nth-of-type(1) {
+    background-color: #f1f3f7;
+    border-radius: 10px;
+  }
+
+  .popup-img div {
+    width: 100%;
+    height: 250px;
+    background-color: #b3bac5;
+    object-fit: cover;
+  }
+
+  .popup-title li:nth-child(1) {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  .popup-title li:nth-child(2) {
+    justify-self: end;
+  }
+
+  .popup .works-card-info {
+    display: flex;
+    gap: 10px;
+    width: 40%;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  /* popup content */
+  .popup-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 12px;
+  }
+
+  .popup-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #344563;
+  }
+
+  .popup div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cancel:hover {
+    background-color: #fff;
+    border: none;
   }
 }
