@@ -69,10 +69,6 @@ body {
   border-radius: 10px;
 }
 
-.hide {
-  display: none;
-}
-
 .popup img:nth-child(3),
 .popup img:nth-child(6) {
   width: 100%;
