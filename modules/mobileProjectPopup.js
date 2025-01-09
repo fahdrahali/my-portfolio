@@ -119,7 +119,7 @@ const addPrjectDetailsMobilePopup = (project) => {
   document.querySelector('.main').appendChild(popupContainer);
 
   button.addEventListener('click', () => {
-    document.querySelector('.popup-container')
+    document.querySelector('.popup-container').remove();
   });
 };
 
