@@ -1,5 +1,5 @@
-import addPrjectDetailsDesktopPopup from './desktopPopup.js';
-import addPrjectDetailsMobilePopup from './projectDetails.js';
+import addPrjectDetailsDesktopPopup from './desktopProjectPopup.js';
+import addPrjectDetailsMobilePopup from './mobileProjectPopup.js';
 import projects from './projects.js';
 
 const worksSection = document.createElement('section');
@@ -57,14 +57,11 @@ const createWorksCard = (project) => {
 
   // Create a MediaQueryList object
 
-
   btn.addEventListener('click', () => {
     const mobileScreen = window.matchMedia('(max-width: 768px)');
 
-    if(mobileScreen.matches)
-    addPrjectDetailsMobilePopup(project);
-
-    addPrjectDetailsDesktopPopup(project);
+    if (mobileScreen.matches) addPrjectDetailsMobilePopup(project);
+    else addPrjectDetailsDesktopPopup(project);
   });
 
   // append all elements to works card
