@@ -133,7 +133,7 @@ const addPrjectDetailsDesktopPopup = (project) => {
   document.querySelector('.main').appendChild(popupContainer);
 
   button.addEventListener('click', () => {
-    popupContainer.classList.add('hide');
+    document.querySelector('.popup-container').remove();
   });
 };
 
