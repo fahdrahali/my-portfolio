@@ -8,6 +8,7 @@ const unionBtn = document.querySelector('.union');
 let email = document.getElementById('email');
 let name = document.getElementById('fname');
 let message = document.getElementById('msg');
+const form = document.getElementById('form');
 
 unionBtn.addEventListener('click', () => {
   addSectionMenu();
@@ -16,6 +17,13 @@ unionBtn.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', () => {
   addProjectsSection();
   User.getUserLocalStorage(name, email, message);
+});
+
+const user = JSON.parse(localStorage.getItem('user'));
+
+form.addEventListener('change', (e) => {
+  user[e.target.name] = e.target.value
+  localStorage.setItem('user', JSON.stringify(user));
 });
 
 document.getElementById('get-in-touch').addEventListener('click', () => {
