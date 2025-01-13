@@ -1,6 +1,6 @@
 import Project from './project.js';
 
-let projects = [];
+const projects = [];
 
 const addProject = (
   name,
@@ -10,9 +10,9 @@ const addProject = (
   technologies,
   year,
   type,
-  company
+  company,
 ) => {
-  let project = new Project(
+  const project = new Project(
     name,
     description,
     moreDescription,
@@ -20,7 +20,7 @@ const addProject = (
     technologies,
     year,
     type,
-    company
+    company,
   );
   projects.push(project);
 };
@@ -33,7 +33,7 @@ addProject(
   ['HTML', 'CSS', 'JS'],
   2015,
   'Back end dev',
-  'CANOPY'
+  'CANOPY',
 );
 
 addProject(
@@ -44,7 +44,7 @@ addProject(
   ['HTML', 'CSS', 'JS'],
   2015,
   'Back end dev',
-  'CANOPY'
+  'CANOPY',
 );
 
 addProject(
@@ -55,7 +55,7 @@ addProject(
   ['HTML', 'CSS', 'JS'],
   2015,
   'Back end dev',
-  'CANOPY'
+  'CANOPY',
 );
 
 addProject(
@@ -66,7 +66,7 @@ addProject(
   ['HTML', 'CSS', 'JS'],
   2015,
   'Back end dev',
-  'CANOPY'
+  'CANOPY',
 );
 
 export default projects;

@@ -44,11 +44,11 @@ const addPrjectDetailsDesktopPopup = (project) => {
   const sectionImg = document.createElement('section');
   sectionImg.classList.add('popup-img');
   const div = document.createElement('div');
-  div.style = 'background:url(' + `'${project.image}'` + ') no-repeat center;';
-
+  const imageProjet = project.image;
+  div.style = `background:url(${imageProjet}) no-repeat center;`;
   sectionImg.appendChild(div);
 
-  //project description
+  // project description
   const p = document.createElement('p');
   p.textContent = project.moreDescription;
 
@@ -56,10 +56,10 @@ const addPrjectDetailsDesktopPopup = (project) => {
   const ulTech = document.createElement('ul');
 
   project.technologies.map((tech) => {
-    let li = document.createElement('li');
+    const li = document.createElement('li');
     li.textContent = tech;
-    ulTech.appendChild(li);
     ulTech.classList.add('works-card-tech');
+    return ulTech.appendChild(li);
   });
 
   // create a devier for project details popup
@@ -100,7 +100,7 @@ const addPrjectDetailsDesktopPopup = (project) => {
   ulLinks.appendChild(liLink);
   ulLinks.appendChild(liLink2);
 
-  //create a popup body
+  // create a popup body
   const sectionPopupContent = document.createElement('section');
   sectionPopupContent.classList.add('popup-content');
 
@@ -109,8 +109,6 @@ const addPrjectDetailsDesktopPopup = (project) => {
   divPopupTech.appendChild(ulTech);
   divPopupTech.appendChild(divider);
   divPopupTech.appendChild(ulLinks);
-
-
 
   sectionPopupContent.appendChild(p);
   sectionPopupContent.appendChild(divPopupTech);

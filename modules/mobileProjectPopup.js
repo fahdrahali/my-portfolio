@@ -46,7 +46,7 @@ const addPrjectDetailsMobilePopup = (project) => {
   img.alt = project.name;
   img.classList.add('project-image');
 
-  //project description
+  // project description
   const p = document.createElement('p');
   p.textContent = project.moreDescription;
 
@@ -54,10 +54,10 @@ const addPrjectDetailsMobilePopup = (project) => {
   const ulTech = document.createElement('ul');
 
   project.technologies.map((tech) => {
-    let li = document.createElement('li');
+    const li = document.createElement('li');
     li.textContent = tech;
-    ulTech.appendChild(li);
     ulTech.classList.add('works-card-tech');
+    return ulTech.appendChild(li);
   });
 
   // create a devier for project details popup
