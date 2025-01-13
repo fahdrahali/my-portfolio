@@ -3,12 +3,12 @@ const addSectionMenu = () => {
   const menuSection = document.createElement('section');
   menuSection.classList.add('menu');
 
-  // create img
+  // create img tag
   const closeImg = document.createElement('img');
   closeImg.src = './assets/close.png';
   closeImg.alt = 'close';
 
-  // create button close
+  // create close button tag
   const closeBtn = document.createElement('button');
   closeBtn.classList.add('close');
   closeBtn.appendChild(closeImg);
