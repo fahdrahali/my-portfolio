@@ -47,7 +47,7 @@ const createWorksCard = (project) => {
   project.technologies.map((tech) => {
     const li = document.createElement('li');
     li.textContent = tech;
-    ulTech.appendChild(li);
+    return ulTech.appendChild(li);
   });
 
   // create a button for project link
@@ -77,9 +77,7 @@ const createWorksCard = (project) => {
 };
 
 const addProjectsSection = () => {
-  projects.map((project) => {
-    createWorksCard(project);
-  });
+  projects.map((project) => createWorksCard(project));
   document
     .querySelector('.main')
     .insertBefore(worksSection, document.getElementById('about'));

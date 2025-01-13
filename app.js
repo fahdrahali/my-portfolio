@@ -5,9 +5,9 @@ import User from './modules/user.js';
 
 // add event listener 'click' to union button
 const unionBtn = document.querySelector('.union');
-let email = document.getElementById('email');
-let name = document.getElementById('fname');
-let message = document.getElementById('msg');
+const email = document.getElementById('email');
+const name = document.getElementById('fname');
+const message = document.getElementById('msg');
 const form = document.getElementById('form');
 
 unionBtn.addEventListener('click', () => {
@@ -22,12 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
 const user = JSON.parse(localStorage.getItem('user'));
 
 form.addEventListener('change', (e) => {
-  user[e.target.name] = e.target.value
+  user[e.target.name] = e.target.value;
   localStorage.setItem('user', JSON.stringify(user));
 });
 
-document.getElementById('get-in-touch').addEventListener('click', () => {
+document.getElementById('get-in-touch').addEventListener('click', (event) => {
   event.preventDefault();
-
   submitForm(name.value, email.value, message.value);
 });

@@ -19,8 +19,8 @@ const addSectionMenu = () => {
 
   // create list items function
   const createListItems = (text, href) => {
-    let item = document.createElement('li');
-    let link = document.createElement('a');
+    const item = document.createElement('li');
+    const link = document.createElement('a');
     link.textContent = text;
     link.href = href;
     item.appendChild(link);
